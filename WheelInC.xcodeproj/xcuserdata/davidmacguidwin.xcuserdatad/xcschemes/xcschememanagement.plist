@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Complication - wheelGlanceAndComplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Glance - wheelGlanceAndComplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Notification - wheelGlanceAndComplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WheelInC.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>watchAppExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>wheelGlanceAndComplication.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>7C151A5B1C862945006D3B2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C298BC01C766FE0007B6C3C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C7C3D7D1C5BF87D001AEEB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C7C3D961C5BF87D001AEEB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C7C3DA11C5BF87D001AEEB8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

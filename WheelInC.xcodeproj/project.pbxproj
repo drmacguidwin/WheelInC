@@ -1,0 +1,984 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C151A601C862945006D3B2F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C151A5E1C862945006D3B2F /* Interface.storyboard */; };
+		7C151A621C862945006D3B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C151A611C862945006D3B2F /* Assets.xcassets */; };
+		7C151A691C862945006D3B2F /* watchAppExtension Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C151A681C862945006D3B2F /* watchAppExtension Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C151A6F1C862945006D3B2F /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C151A6E1C862945006D3B2F /* InterfaceController.m */; };
+		7C151A721C862945006D3B2F /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C151A711C862945006D3B2F /* ExtensionDelegate.m */; };
+		7C151A741C862946006D3B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C151A731C862946006D3B2F /* Assets.xcassets */; };
+		7C151A781C862946006D3B2F /* watchAppExtension.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7C151A5C1C862945006D3B2F /* watchAppExtension.app */; };
+		7C298BB81C614B15007B6C3C /* SMRotaryWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C298BB71C614B15007B6C3C /* SMRotaryWheel.m */; };
+		7C298BBB1C615218007B6C3C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C298BBA1C615218007B6C3C /* QuartzCore.framework */; };
+		7C298BBE1C6A9954007B6C3C /* SMSector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C298BBD1C6A9954007B6C3C /* SMSector.m */; };
+		7C298BCE1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7C298BCD1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7C7C3D831C5BF87D001AEEB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C3D821C5BF87D001AEEB8 /* main.m */; };
+		7C7C3D861C5BF87D001AEEB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C3D851C5BF87D001AEEB8 /* AppDelegate.m */; };
+		7C7C3D891C5BF87D001AEEB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C3D881C5BF87D001AEEB8 /* ViewController.m */; };
+		7C7C3D8C1C5BF87D001AEEB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7C3D8A1C5BF87D001AEEB8 /* Main.storyboard */; };
+		7C7C3D8E1C5BF87D001AEEB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7C3D8D1C5BF87D001AEEB8 /* Assets.xcassets */; };
+		7C7C3D911C5BF87D001AEEB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7C3D8F1C5BF87D001AEEB8 /* LaunchScreen.storyboard */; };
+		7C7C3D9C1C5BF87D001AEEB8 /* WheelInCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C3D9B1C5BF87D001AEEB8 /* WheelInCTests.m */; };
+		7C7C3DA71C5BF87D001AEEB8 /* WheelInCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7C3DA61C5BF87D001AEEB8 /* WheelInCUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C151A6A1C862945006D3B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C151A671C862945006D3B2F;
+			remoteInfo = "watchAppExtension Extension";
+		};
+		7C151A761C862946006D3B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C151A5B1C862945006D3B2F;
+			remoteInfo = watchAppExtension;
+		};
+		7C298BCF1C766FE0007B6C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C298BCC1C766FE0007B6C3C;
+			remoteInfo = "wheelGlanceAndComplication Extension";
+		};
+		7C7C3D981C5BF87D001AEEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C7C3D7D1C5BF87D001AEEB8;
+			remoteInfo = WheelInC;
+		};
+		7C7C3DA31C5BF87D001AEEB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C7C3D7D1C5BF87D001AEEB8;
+			remoteInfo = WheelInC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7C151A7E1C862946006D3B2F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7C151A691C862945006D3B2F /* watchAppExtension Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BEC1C766FE1007B6C3C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7C298BCE1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BF01C766FE1007B6C3C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7C151A781C862946006D3B2F /* watchAppExtension.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7C151A5C1C862945006D3B2F /* watchAppExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchAppExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C151A5F1C862945006D3B2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7C151A611C862945006D3B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C151A631C862945006D3B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C151A681C862945006D3B2F /* watchAppExtension Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchAppExtension Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C151A6D1C862945006D3B2F /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		7C151A6E1C862945006D3B2F /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		7C151A701C862945006D3B2F /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		7C151A711C862945006D3B2F /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		7C151A731C862946006D3B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C151A751C862946006D3B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C298BB61C614B15007B6C3C /* SMRotaryWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRotaryWheel.h; sourceTree = "<group>"; };
+		7C298BB71C614B15007B6C3C /* SMRotaryWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRotaryWheel.m; sourceTree = "<group>"; };
+		7C298BB91C614B6C007B6C3C /* SMRotaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRotaryProtocol.h; sourceTree = "<group>"; };
+		7C298BBA1C615218007B6C3C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7C298BBC1C6A9954007B6C3C /* SMSector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSector.h; sourceTree = "<group>"; };
+		7C298BBD1C6A9954007B6C3C /* SMSector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSector.m; sourceTree = "<group>"; };
+		7C298BC11C766FE0007B6C3C /* wheelGlanceAndComplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheelGlanceAndComplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C298BCD1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "wheelGlanceAndComplication Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7C3D7E1C5BF87D001AEEB8 /* WheelInC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelInC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7C3D821C5BF87D001AEEB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C7C3D841C5BF87D001AEEB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C7C3D851C5BF87D001AEEB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C7C3D871C5BF87D001AEEB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7C7C3D881C5BF87D001AEEB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C7C3D8B1C5BF87D001AEEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C7C3D8D1C5BF87D001AEEB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C7C3D901C5BF87D001AEEB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C7C3D921C5BF87D001AEEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7C3D971C5BF87D001AEEB8 /* WheelInCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelInCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7C3D9B1C5BF87D001AEEB8 /* WheelInCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelInCTests.m; sourceTree = "<group>"; };
+		7C7C3D9D1C5BF87D001AEEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7C3DA21C5BF87D001AEEB8 /* WheelInCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelInCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C7C3DA61C5BF87D001AEEB8 /* WheelInCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WheelInCUITests.m; sourceTree = "<group>"; };
+		7C7C3DA81C5BF87D001AEEB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C151A651C862945006D3B2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BCA1C766FE0007B6C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D7B1C5BF87D001AEEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C298BBB1C615218007B6C3C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D941C5BF87D001AEEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D9F1C5BF87D001AEEB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C151A5D1C862945006D3B2F /* watchAppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7C151A5E1C862945006D3B2F /* Interface.storyboard */,
+				7C151A611C862945006D3B2F /* Assets.xcassets */,
+				7C151A631C862945006D3B2F /* Info.plist */,
+			);
+			path = watchAppExtension;
+			sourceTree = "<group>";
+		};
+		7C151A6C1C862945006D3B2F /* watchAppExtension Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7C151A6D1C862945006D3B2F /* InterfaceController.h */,
+				7C151A6E1C862945006D3B2F /* InterfaceController.m */,
+				7C151A701C862945006D3B2F /* ExtensionDelegate.h */,
+				7C151A711C862945006D3B2F /* ExtensionDelegate.m */,
+				7C151A731C862946006D3B2F /* Assets.xcassets */,
+				7C151A751C862946006D3B2F /* Info.plist */,
+			);
+			path = "watchAppExtension Extension";
+			sourceTree = "<group>";
+		};
+		7C7C3D751C5BF87D001AEEB8 = {
+			isa = PBXGroup;
+			children = (
+				7C298BBA1C615218007B6C3C /* QuartzCore.framework */,
+				7C7C3D801C5BF87D001AEEB8 /* WheelInC */,
+				7C151A5D1C862945006D3B2F /* watchAppExtension */,
+				7C151A6C1C862945006D3B2F /* watchAppExtension Extension */,
+				7C7C3D9A1C5BF87D001AEEB8 /* WheelInCTests */,
+				7C7C3DA51C5BF87D001AEEB8 /* WheelInCUITests */,
+				7C7C3D7F1C5BF87D001AEEB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C7C3D7F1C5BF87D001AEEB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3D7E1C5BF87D001AEEB8 /* WheelInC.app */,
+				7C7C3D971C5BF87D001AEEB8 /* WheelInCTests.xctest */,
+				7C7C3DA21C5BF87D001AEEB8 /* WheelInCUITests.xctest */,
+				7C298BC11C766FE0007B6C3C /* wheelGlanceAndComplication.app */,
+				7C298BCD1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex */,
+				7C151A5C1C862945006D3B2F /* watchAppExtension.app */,
+				7C151A681C862945006D3B2F /* watchAppExtension Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C7C3D801C5BF87D001AEEB8 /* WheelInC */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3D841C5BF87D001AEEB8 /* AppDelegate.h */,
+				7C7C3D851C5BF87D001AEEB8 /* AppDelegate.m */,
+				7C7C3D871C5BF87D001AEEB8 /* ViewController.h */,
+				7C7C3D881C5BF87D001AEEB8 /* ViewController.m */,
+				7C7C3D8A1C5BF87D001AEEB8 /* Main.storyboard */,
+				7C7C3D8D1C5BF87D001AEEB8 /* Assets.xcassets */,
+				7C7C3D8F1C5BF87D001AEEB8 /* LaunchScreen.storyboard */,
+				7C7C3D921C5BF87D001AEEB8 /* Info.plist */,
+				7C7C3D811C5BF87D001AEEB8 /* Supporting Files */,
+				7C298BB61C614B15007B6C3C /* SMRotaryWheel.h */,
+				7C298BB71C614B15007B6C3C /* SMRotaryWheel.m */,
+				7C298BB91C614B6C007B6C3C /* SMRotaryProtocol.h */,
+				7C298BBC1C6A9954007B6C3C /* SMSector.h */,
+				7C298BBD1C6A9954007B6C3C /* SMSector.m */,
+			);
+			path = WheelInC;
+			sourceTree = "<group>";
+		};
+		7C7C3D811C5BF87D001AEEB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3D821C5BF87D001AEEB8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C7C3D9A1C5BF87D001AEEB8 /* WheelInCTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3D9B1C5BF87D001AEEB8 /* WheelInCTests.m */,
+				7C7C3D9D1C5BF87D001AEEB8 /* Info.plist */,
+			);
+			path = WheelInCTests;
+			sourceTree = "<group>";
+		};
+		7C7C3DA51C5BF87D001AEEB8 /* WheelInCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7C7C3DA61C5BF87D001AEEB8 /* WheelInCUITests.m */,
+				7C7C3DA81C5BF87D001AEEB8 /* Info.plist */,
+			);
+			path = WheelInCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C151A5B1C862945006D3B2F /* watchAppExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C151A7F1C862946006D3B2F /* Build configuration list for PBXNativeTarget "watchAppExtension" */;
+			buildPhases = (
+				7C151A5A1C862945006D3B2F /* Resources */,
+				7C151A7E1C862946006D3B2F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C151A6B1C862945006D3B2F /* PBXTargetDependency */,
+			);
+			name = watchAppExtension;
+			productName = watchAppExtension;
+			productReference = 7C151A5C1C862945006D3B2F /* watchAppExtension.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7C151A671C862945006D3B2F /* watchAppExtension Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C151A7D1C862946006D3B2F /* Build configuration list for PBXNativeTarget "watchAppExtension Extension" */;
+			buildPhases = (
+				7C151A641C862945006D3B2F /* Sources */,
+				7C151A651C862945006D3B2F /* Frameworks */,
+				7C151A661C862945006D3B2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "watchAppExtension Extension";
+			productName = "watchAppExtension Extension";
+			productReference = 7C151A681C862945006D3B2F /* watchAppExtension Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7C298BC01C766FE0007B6C3C /* wheelGlanceAndComplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C298BED1C766FE1007B6C3C /* Build configuration list for PBXNativeTarget "wheelGlanceAndComplication" */;
+			buildPhases = (
+				7C298BBF1C766FE0007B6C3C /* Resources */,
+				7C298BEC1C766FE1007B6C3C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C298BD01C766FE0007B6C3C /* PBXTargetDependency */,
+			);
+			name = wheelGlanceAndComplication;
+			productName = wheelGlanceAndComplication;
+			productReference = 7C298BC11C766FE0007B6C3C /* wheelGlanceAndComplication.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7C298BCC1C766FE0007B6C3C /* wheelGlanceAndComplication Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C298BE91C766FE1007B6C3C /* Build configuration list for PBXNativeTarget "wheelGlanceAndComplication Extension" */;
+			buildPhases = (
+				7C298BC91C766FE0007B6C3C /* Sources */,
+				7C298BCA1C766FE0007B6C3C /* Frameworks */,
+				7C298BCB1C766FE0007B6C3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wheelGlanceAndComplication Extension";
+			productName = "wheelGlanceAndComplication Extension";
+			productReference = 7C298BCD1C766FE0007B6C3C /* wheelGlanceAndComplication Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		7C7C3D7D1C5BF87D001AEEB8 /* WheelInC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7C3DAB1C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInC" */;
+			buildPhases = (
+				7C7C3D7A1C5BF87D001AEEB8 /* Sources */,
+				7C7C3D7B1C5BF87D001AEEB8 /* Frameworks */,
+				7C7C3D7C1C5BF87D001AEEB8 /* Resources */,
+				7C298BF01C766FE1007B6C3C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C151A771C862946006D3B2F /* PBXTargetDependency */,
+			);
+			name = WheelInC;
+			productName = WheelInC;
+			productReference = 7C7C3D7E1C5BF87D001AEEB8 /* WheelInC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C7C3D961C5BF87D001AEEB8 /* WheelInCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7C3DAE1C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInCTests" */;
+			buildPhases = (
+				7C7C3D931C5BF87D001AEEB8 /* Sources */,
+				7C7C3D941C5BF87D001AEEB8 /* Frameworks */,
+				7C7C3D951C5BF87D001AEEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7C3D991C5BF87D001AEEB8 /* PBXTargetDependency */,
+			);
+			name = WheelInCTests;
+			productName = WheelInCTests;
+			productReference = 7C7C3D971C5BF87D001AEEB8 /* WheelInCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C7C3DA11C5BF87D001AEEB8 /* WheelInCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C7C3DB11C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInCUITests" */;
+			buildPhases = (
+				7C7C3D9E1C5BF87D001AEEB8 /* Sources */,
+				7C7C3D9F1C5BF87D001AEEB8 /* Frameworks */,
+				7C7C3DA01C5BF87D001AEEB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C7C3DA41C5BF87D001AEEB8 /* PBXTargetDependency */,
+			);
+			name = WheelInCUITests;
+			productName = WheelInCUITests;
+			productReference = 7C7C3DA21C5BF87D001AEEB8 /* WheelInCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C7C3D761C5BF87D001AEEB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "David MacGuidwin";
+				TargetAttributes = {
+					7C151A5B1C862945006D3B2F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = W8GNLHW4FY;
+					};
+					7C151A671C862945006D3B2F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = W8GNLHW4FY;
+					};
+					7C298BC01C766FE0007B6C3C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7C298BCC1C766FE0007B6C3C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					7C7C3D7D1C5BF87D001AEEB8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = W8GNLHW4FY;
+					};
+					7C7C3D961C5BF87D001AEEB8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7C7C3D7D1C5BF87D001AEEB8;
+					};
+					7C7C3DA11C5BF87D001AEEB8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 7C7C3D7D1C5BF87D001AEEB8;
+					};
+				};
+			};
+			buildConfigurationList = 7C7C3D791C5BF87D001AEEB8 /* Build configuration list for PBXProject "WheelInC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C7C3D751C5BF87D001AEEB8;
+			productRefGroup = 7C7C3D7F1C5BF87D001AEEB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C7C3D7D1C5BF87D001AEEB8 /* WheelInC */,
+				7C7C3D961C5BF87D001AEEB8 /* WheelInCTests */,
+				7C7C3DA11C5BF87D001AEEB8 /* WheelInCUITests */,
+				7C298BC01C766FE0007B6C3C /* wheelGlanceAndComplication */,
+				7C298BCC1C766FE0007B6C3C /* wheelGlanceAndComplication Extension */,
+				7C151A5B1C862945006D3B2F /* watchAppExtension */,
+				7C151A671C862945006D3B2F /* watchAppExtension Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C151A5A1C862945006D3B2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C151A621C862945006D3B2F /* Assets.xcassets in Resources */,
+				7C151A601C862945006D3B2F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C151A661C862945006D3B2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C151A741C862946006D3B2F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BBF1C766FE0007B6C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BCB1C766FE0007B6C3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D7C1C5BF87D001AEEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7C3D911C5BF87D001AEEB8 /* LaunchScreen.storyboard in Resources */,
+				7C7C3D8E1C5BF87D001AEEB8 /* Assets.xcassets in Resources */,
+				7C7C3D8C1C5BF87D001AEEB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D951C5BF87D001AEEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3DA01C5BF87D001AEEB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C151A641C862945006D3B2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C151A721C862945006D3B2F /* ExtensionDelegate.m in Sources */,
+				7C151A6F1C862945006D3B2F /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C298BC91C766FE0007B6C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D7A1C5BF87D001AEEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C298BB81C614B15007B6C3C /* SMRotaryWheel.m in Sources */,
+				7C7C3D891C5BF87D001AEEB8 /* ViewController.m in Sources */,
+				7C298BBE1C6A9954007B6C3C /* SMSector.m in Sources */,
+				7C7C3D861C5BF87D001AEEB8 /* AppDelegate.m in Sources */,
+				7C7C3D831C5BF87D001AEEB8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D931C5BF87D001AEEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7C3D9C1C5BF87D001AEEB8 /* WheelInCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C7C3D9E1C5BF87D001AEEB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7C3DA71C5BF87D001AEEB8 /* WheelInCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C151A6B1C862945006D3B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C151A671C862945006D3B2F /* watchAppExtension Extension */;
+			targetProxy = 7C151A6A1C862945006D3B2F /* PBXContainerItemProxy */;
+		};
+		7C151A771C862946006D3B2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C151A5B1C862945006D3B2F /* watchAppExtension */;
+			targetProxy = 7C151A761C862946006D3B2F /* PBXContainerItemProxy */;
+		};
+		7C298BD01C766FE0007B6C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C298BCC1C766FE0007B6C3C /* wheelGlanceAndComplication Extension */;
+			targetProxy = 7C298BCF1C766FE0007B6C3C /* PBXContainerItemProxy */;
+		};
+		7C7C3D991C5BF87D001AEEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C7C3D7D1C5BF87D001AEEB8 /* WheelInC */;
+			targetProxy = 7C7C3D981C5BF87D001AEEB8 /* PBXContainerItemProxy */;
+		};
+		7C7C3DA41C5BF87D001AEEB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C7C3D7D1C5BF87D001AEEB8 /* WheelInC */;
+			targetProxy = 7C7C3DA31C5BF87D001AEEB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C151A5E1C862945006D3B2F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C151A5F1C862945006D3B2F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		7C7C3D8A1C5BF87D001AEEB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C7C3D8B1C5BF87D001AEEB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7C7C3D8F1C5BF87D001AEEB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C7C3D901C5BF87D001AEEB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C151A791C862946006D3B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = watchAppExtension_Extension;
+				INFOPLIST_FILE = watchAppExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		7C151A7A1C862946006D3B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = watchAppExtension_Extension;
+				INFOPLIST_FILE = watchAppExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		7C151A7B1C862946006D3B2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchAppExtension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		7C151A7C1C862946006D3B2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "watchAppExtension Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		7C298BEA1C766FE1007B6C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "wheelGlanceAndComplication Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7C298BEB1C766FE1007B6C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "wheelGlanceAndComplication Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInC.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		7C298BEE1C766FE1007B6C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = wheelGlanceAndComplication_Extension;
+				INFOPLIST_FILE = wheelGlanceAndComplication/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		7C298BEF1C766FE1007B6C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = wheelGlanceAndComplication_Extension;
+				INFOPLIST_FILE = wheelGlanceAndComplication/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInC.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		7C7C3DA91C5BF87D001AEEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C7C3DAA1C5BF87D001AEEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C7C3DAC1C5BF87D001AEEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WheelInC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		7C7C3DAD1C5BF87D001AEEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = WheelInC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCNew;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		7C7C3DAF1C5BF87D001AEEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WheelInCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheelInC.app/WheelInC";
+			};
+			name = Debug;
+		};
+		7C7C3DB01C5BF87D001AEEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WheelInCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheelInC.app/WheelInC";
+			};
+			name = Release;
+		};
+		7C7C3DB21C5BF87D001AEEB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WheelInCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WheelInC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7C7C3DB31C5BF87D001AEEB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WheelInCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tapper.game.WheelInCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WheelInC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C151A7D1C862946006D3B2F /* Build configuration list for PBXNativeTarget "watchAppExtension Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C151A7B1C862946006D3B2F /* Debug */,
+				7C151A7C1C862946006D3B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C151A7F1C862946006D3B2F /* Build configuration list for PBXNativeTarget "watchAppExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C151A791C862946006D3B2F /* Debug */,
+				7C151A7A1C862946006D3B2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7C298BE91C766FE1007B6C3C /* Build configuration list for PBXNativeTarget "wheelGlanceAndComplication Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C298BEA1C766FE1007B6C3C /* Debug */,
+				7C298BEB1C766FE1007B6C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C298BED1C766FE1007B6C3C /* Build configuration list for PBXNativeTarget "wheelGlanceAndComplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C298BEE1C766FE1007B6C3C /* Debug */,
+				7C298BEF1C766FE1007B6C3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C3D791C5BF87D001AEEB8 /* Build configuration list for PBXProject "WheelInC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7C3DA91C5BF87D001AEEB8 /* Debug */,
+				7C7C3DAA1C5BF87D001AEEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C3DAB1C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7C3DAC1C5BF87D001AEEB8 /* Debug */,
+				7C7C3DAD1C5BF87D001AEEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C3DAE1C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7C3DAF1C5BF87D001AEEB8 /* Debug */,
+				7C7C3DB01C5BF87D001AEEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C7C3DB11C5BF87D001AEEB8 /* Build configuration list for PBXNativeTarget "WheelInCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C7C3DB21C5BF87D001AEEB8 /* Debug */,
+				7C7C3DB31C5BF87D001AEEB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C7C3D761C5BF87D001AEEB8 /* Project object */;
+}
