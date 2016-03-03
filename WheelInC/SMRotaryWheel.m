@@ -8,6 +8,7 @@
 
 #import "SMRotaryWheel.h"
 #import <QuartzCore/QuartzCore.h>
+#import <WatchConnectivity/WatchConnectivity.h>
 
 
 @interface SMRotaryWheel()
@@ -80,8 +81,8 @@ static float deltaAngle;
     } else {
         [self buildSectorsOdd];
     }
-    [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"value is %i, and color is", self.currentSector]];
-    //[self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"value is %i", self.currentSector]];
+    [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"%i", self.currentSector]];
+    
 }
 
 
@@ -147,7 +148,13 @@ static float deltaAngle;
     container.transform = t;
     [UIView commitAnimations];
     
-    [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"value is %i, and color is", self.currentSector]];
+    [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"%i", self.currentSector]];
+    //[self.delegate wheelDidChangeValue:[(int),self.currentSector]];
+    
+
+    
+    
+    
     
 }
 - (float) calculateDistanceFromCenter:(CGPoint)point {
@@ -202,5 +209,7 @@ static float deltaAngle;
         //5 - add sector to array
         [sectors addObject:sector];
     }
+    
 }
+
 @end

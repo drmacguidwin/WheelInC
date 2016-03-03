@@ -10,10 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <label alignment="left" text="Hello" textAlignment="center" id="SsV-Lc-Dw3"/>
+                        <imageView width="1" height="1" alignment="left" id="urL-HV-Oeq"/>
                     </items>
                     <connections>
-                        <outlet property="counterLabel" destination="SsV-Lc-Dw3" id="d2u-Ur-60j"/>
+                        <outlet property="screenImage" destination="urL-HV-Oeq" id="VV5-S4-SuC"/>
                     </connections>
                 </controller>
             </objects>

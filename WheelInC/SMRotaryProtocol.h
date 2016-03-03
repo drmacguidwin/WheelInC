@@ -12,4 +12,6 @@
 
 - (void) wheelDidChangeValue:(NSString *)newValue;
 
+//- (void) wheelDidChangeValue:(NSNumber *)newValue;
+
 @end

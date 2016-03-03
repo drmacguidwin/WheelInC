@@ -37,14 +37,34 @@
     
     [self.view addSubview:wheel];
 }
+- (void) wheelDidChangeValue:(NSString *)newValue {
+    
+    WCSession* session = [WCSession defaultSession];
+    session.delegate = self;
+    [session activateSession];
+    
+    //self.sectorLabel.text = newValue;
+    
+    
+    [session sendMessage:@{@"theSector":newValue} replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
+        
+        NSLog(@"Phone Message Sent From Phone");
+    } errorHandler:^(NSError * _Nonnull error) {
+        NSLog(@"Error Sending Message From Phone");
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (void) wheelDidChangeValue:(NSString *)newValue {
-    self.sectorLabel.text = newValue;
-}
 
+
+-(void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.sectorLabel.text = message[@"b"];
+        NSLog(@"MESSAGE FROM WATCH SETS LABEL TO; %@", message);
+    });
+}
 
 @end
