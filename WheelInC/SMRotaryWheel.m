@@ -66,11 +66,8 @@ static float deltaAngle;
         slice.path = piePath.CGPath;
         [[self.container layer] addSublayer:slice];
     }
-    
-    // 7
     container.userInteractionEnabled = NO;
     [self addSubview:container];
-    // 8
     sectors = [NSMutableArray arrayWithCapacity:numberOfSections];
     if (numberOfSections % 2 == 0) {
         [self buildSectorsEven];
@@ -80,7 +77,6 @@ static float deltaAngle;
     [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"%i", self.currentSector]];
     
 }
-
 
 - (void) rotate {
     CGAffineTransform t = CGAffineTransformRotate(container.transform, -0.78);
@@ -113,16 +109,16 @@ static float deltaAngle;
     return YES;
 }
 - (void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
-    //1 - get current container rotation in radians
+    //get current container rotation in radians
     CGFloat radians = atan2f(container.transform.b, container.transform.a);
-    //2 - initialize new value
+    //initialize new value
     CGFloat newVal = 0.0;
-    //3 - iterate through all sectors
+    //iterate through all sectors
     for (SMSector *s in sectors) {
-        //4 - check for anomly (occurs wit heven number of sectors)
+        //check for anomly (occurs wit heven number of sectors)
         if (s.minValue > 0 && s.maxValue < 0) {
             if (s.maxValue > radians || s.minValue < radians) {
-                //5 - find the quadrant (positive or negative)
+                //5find the quadrant (positive or negative)
                 if (radians > 0) {
                     newVal = radians - M_PI;
                 } else {
@@ -131,13 +127,13 @@ static float deltaAngle;
                 currentSector = s.sector;
             }
         }
-        //6 - all non-anomalous cases
+        //all non-anomalous cases
         else if (radians > s.minValue && radians < s.maxValue) {
             newVal = radians - s.midValue;
             currentSector = s.sector;
         }
     }
-    //7 - set up animation for final rotation
+    //set up animation for final rotation
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.2];
     CGAffineTransform t = CGAffineTransformRotate(container.transform, -newVal);
@@ -153,14 +149,14 @@ static float deltaAngle;
     return sqrt(dx*dx + dy*dy);
 }
 - (void) buildSectorsOdd {
-    // 1 - define sector length
+    //define sector length
     CGFloat fanWidth = M_PI*2/numberOfSections;
-    // 2 - set initial midpoint
+    //set initial midpoint
     CGFloat mid = 0;
-    // 3 - iterate through all sectors
+    //iterate through all sectors
     for (int i = 0; i < numberOfSections; i++) {
         SMSector *sector = [[SMSector alloc] init];
-        // 4 - set sector values
+        //set sector values
         sector.midValue = mid;
         sector.minValue = mid - (fanWidth/2);
         sector.maxValue = mid + (fanWidth/2);
@@ -170,20 +166,20 @@ static float deltaAngle;
             mid = -mid;
             mid -= fanWidth;
         }
-        // 5 - add sector to array
+        //add sector to array
         [sectors addObject:sector];
         NSLog(@"cl is %@", sector);
     }
 }
 - (void) buildSectorsEven {
-    //1 - define sector length
+    //define sector length
     CGFloat fanWidth = M_PI*2/numberOfSections;
-    //2 - set inital midpoint
+    //set inital midpoint
     CGFloat mid = 0;
-    //3 - iterate through all sectors
+    //iterate through all sectors
     for (int i = 0; i < numberOfSections; i++) {
         SMSector *sector = [[SMSector alloc] init];
-        //4 - set sector values
+        //set sector values
         sector.midValue = mid;
         sector.minValue = mid - (fanWidth/2);
         sector.maxValue = mid + (fanWidth/2);
@@ -195,7 +191,7 @@ static float deltaAngle;
         }
         mid -= fanWidth;
         NSLog(@"cl is %@", sector);
-        //5 - add sector to array
+        //add sector to array
         [sectors addObject:sector];
     }
 }

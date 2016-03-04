@@ -23,11 +23,11 @@
     [self.view addSubview:wheel];
 }
 - (void) wheelDidChangeValue:(NSString *)newValue {
-    
+    // create connectivity session to pass data between phone and watch
     WCSession* session = [WCSession defaultSession];
     session.delegate = self;
     [session activateSession];
-    
+    // pass 'newValue' as "theSector" the phone app is currently on
     [session sendMessage:@{@"theSector":newValue} replyHandler:^(NSDictionary<NSString *,id> * _Nonnull replyMessage) {
         NSLog(@"Phone Message Sent From Phone");
     } errorHandler:^(NSError * _Nonnull error) {
