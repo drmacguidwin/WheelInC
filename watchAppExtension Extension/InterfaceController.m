@@ -39,11 +39,14 @@
     [super didDeactivate];
 }
 
+
 -(void) session:(WCSession *)session didReceiveMessage:(NSDictionary<NSString *,id> *)message replyHandler:(void (^)(NSDictionary<NSString *,id> * _Nonnull))replyHandler{
+    //receive approriate Sector data from phone
     NSString *colorSector = [message valueForKey:@"theSector"];
+    //take that data and transfer from a string to int
     int colorSectorNumber = [colorSector intValue];
     NSLog(@"this is the sector number %i", colorSectorNumber);
-
+    //run switch statement to determine which color should appear on watch app
     UIColor *fillColor;
     switch (colorSectorNumber) {
         case 0:
@@ -62,29 +65,26 @@
             break;
     }
     
+    //build circle for watch display
     CGFloat scale = [WKInterfaceDevice currentDevice].screenScale;
     UIGraphicsBeginImageContextWithOptions(self.contentFrame.size, false, scale);
     CGContextRef context = UIGraphicsGetCurrentContext();
-
+    
     CGColorRef newColor = fillColor.CGColor;
     CGContextSetFillColorWithColor(context, newColor);
-    
     CGFloat contentFrameWidth = self.contentFrame.size.width;
     CGFloat contentFrameHeight = self.contentFrame.size.height;
     CGPoint center = CGPointMake(contentFrameWidth / 2.0, contentFrameHeight / 2.0);
     CGFloat radius = MIN(contentFrameWidth / 2.0, contentFrameHeight/ 2.0) - 2;
-    
     CGContextBeginPath (context);
     CGContextAddArc(context, center.x, center.y, radius, 0, 2 * M_PI, 1);
     CGContextFillPath(context);
     CGContextStrokePath(context);
     
+    //turn circle into a UIImage that can be displayed on the watch app
     CGImageRef cgimage = CGBitmapContextCreateImage(context);
     UIImage *drawingImage = [UIImage imageWithCGImage:cgimage];
     UIGraphicsEndImageContext();
-    
     [self.screenImage setImage:drawingImage];
     }
-
-
 @end

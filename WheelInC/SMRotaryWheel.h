@@ -14,7 +14,6 @@
 
 @property (nonatomic, strong) NSMutableArray *sectors;
 @property int currentSector;
-
 @property (weak) id <SMRotaryProtocol> delegate;
 @property (nonatomic, strong) UIView *container;
 @property int numberOfSections;
