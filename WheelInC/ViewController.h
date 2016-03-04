@@ -9,14 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SMRotaryProtocol.h"
 
-
-//@interface ViewController : UIViewController
 @interface ViewController : UIViewController<SMRotaryProtocol>
 
-@property (nonatomic, strong) UILabel *sectorLabel;
-@property (nonatomic, strong) UIColor *sectorColor;
-
 @end
-
-//@end
-

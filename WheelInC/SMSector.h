@@ -15,7 +15,5 @@
 @property float maxValue;
 @property float midValue;
 @property int sector;
-@property UIColor *sectorColor;
-
 
 @end
