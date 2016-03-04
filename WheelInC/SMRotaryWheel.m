@@ -10,11 +10,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import <WatchConnectivity/WatchConnectivity.h>
 
-
 @interface SMRotaryWheel()
 
-- (void)drawWheel;
-- (float)calculateDistanceFromCenter:(CGPoint)point;
+- (void) drawWheel;
+- (float) calculateDistanceFromCenter:(CGPoint)point;
 - (void) buildSectorsEven;
 - (void) buildSectorsOdd;
 
@@ -27,11 +26,9 @@ static float deltaAngle;
 
 - (id) initWithFrame:(CGRect)frame andDelegate:(id)del withSections:(int)sectionsNumber {
     if ((self = [super initWithFrame:frame])) {
-        
         self.currentSector = 0;
         self.numberOfSections = sectionsNumber;
         self.delegate = del;
-        
         [self drawWheel];
     }
     return self;
@@ -44,7 +41,7 @@ static float deltaAngle;
     container = [[UIView alloc] initWithFrame:self.frame];
     CGFloat angleSize = 2*M_PI/numberOfSections;
     CGPoint centerOne = CGPointMake(CGRectGetWidth(container.bounds)/2.f, CGRectGetHeight(container.bounds)/2.f);
-    CGFloat radius = 150;
+    CGFloat radius = (self.container.frame.size.width)/2;
     
     //create a color array to hold optional colors for the wheel
     NSMutableArray *colorArray = [[NSMutableArray alloc] initWithObjects:[UIColor blueColor], [UIColor greenColor], [UIColor redColor], [UIColor purpleColor], nil];
@@ -65,7 +62,6 @@ static float deltaAngle;
         [piePath moveToPoint:centerOne];
         [piePath addLineToPoint:CGPointMake(centerOne.x + radius * cosf(startingAngle), centerOne.y + radius * sinf(startingAngle))];
         [piePath addArcWithCenter:centerOne radius:radius startAngle:startingAngle endAngle:endingAngle clockwise:YES];
-    
         [piePath closePath];
         slice.path = piePath.CGPath;
         [[self.container layer] addSublayer:slice];
@@ -94,7 +90,7 @@ static float deltaAngle;
 - (BOOL)beginTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event {
     CGPoint touchPoint = [touch locationInView:self];
     float dist = [self calculateDistanceFromCenter:touchPoint];
-    if (dist < 10 || dist > 150) {
+    if (dist < 15 || dist > (self.container.frame.size.width)/2) {
         NSLog(@"ignoring tap (%f,%f)", touchPoint.x, touchPoint.y);
         return NO;
         }
@@ -149,13 +145,6 @@ static float deltaAngle;
     [UIView commitAnimations];
     
     [self.delegate wheelDidChangeValue:[NSString stringWithFormat:@"%i", self.currentSector]];
-    //[self.delegate wheelDidChangeValue:[(int),self.currentSector]];
-    
-
-    
-    
-    
-    
 }
 - (float) calculateDistanceFromCenter:(CGPoint)point {
     CGPoint center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
@@ -209,7 +198,5 @@ static float deltaAngle;
         //5 - add sector to array
         [sectors addObject:sector];
     }
-    
 }
-
 @end

@@ -43,7 +43,7 @@
     NSString *colorSector = [message valueForKey:@"theSector"];
     int colorSectorNumber = [colorSector intValue];
     NSLog(@"this is the sector number %i", colorSectorNumber);
-    
+
     UIColor *fillColor;
     switch (colorSectorNumber) {
         case 0:
@@ -85,5 +85,6 @@
     
     [self.screenImage setImage:drawingImage];
     }
+
 
 @end
